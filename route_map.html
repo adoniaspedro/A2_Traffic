@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c6256f67eb70424b3d72a0d5aefc006c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c6256f67eb70424b3d72a0d5aefc006c" ></div>
+        
+</body>
+<script>    
+    
+            var map_c6256f67eb70424b3d72a0d5aefc006c = L.map(
+                "map_c6256f67eb70424b3d72a0d5aefc006c",
+                {
+                    center: [-37.84221, 145.09474],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1d72ce38c9108fabc8ddde67e4c959c5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c6256f67eb70424b3d72a0d5aefc006c);
+        
+    
+            var marker_35218b405c340719c24552ac3d390bbe = L.marker(
+                [-37.8676, 145.09146],
+                {}
+            ).addTo(map_c6256f67eb70424b3d72a0d5aefc006c);
+        
+    
+            var icon_aff5e2f399822786f798433f4289715e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_35218b405c340719c24552ac3d390bbe.setIcon(icon_aff5e2f399822786f798433f4289715e);
+        
+    
+        var popup_685f26ee2df2b1da1ddf51df9b21dfe1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a07e851562d91d5c7b248432226157be = $(`<div id="html_a07e851562d91d5c7b248432226157be" style="width: 100.0%; height: 100.0%;"><b>Start:</b> WARRIGAL_RD S of HIGH STREET_RD</div>`)[0];
+                popup_685f26ee2df2b1da1ddf51df9b21dfe1.setContent(html_a07e851562d91d5c7b248432226157be);
+            
+        
+
+        marker_35218b405c340719c24552ac3d390bbe.bindPopup(popup_685f26ee2df2b1da1ddf51df9b21dfe1)
+        ;
+
+        
+    
+    
+            var marker_1dcaee9a8d649d81967d1ee79a2d85e4 = L.marker(
+                [-37.81682, 145.09802],
+                {}
+            ).addTo(map_c6256f67eb70424b3d72a0d5aefc006c);
+        
+    
+            var icon_d16655cf4bbb99ec2d992a1cc1350ae3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1dcaee9a8d649d81967d1ee79a2d85e4.setIcon(icon_d16655cf4bbb99ec2d992a1cc1350ae3);
+        
+    
+        var popup_dc0101841e9b76bf1dc03f20ab86687d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcf85aef0052d6df14886cedd711bcad = $(`<div id="html_bcf85aef0052d6df14886cedd711bcad" style="width: 100.0%; height: 100.0%;"><b>End:</b> UNION_RD S of MAROONDAH_HWY</div>`)[0];
+                popup_dc0101841e9b76bf1dc03f20ab86687d.setContent(html_bcf85aef0052d6df14886cedd711bcad);
+            
+        
+
+        marker_1dcaee9a8d649d81967d1ee79a2d85e4.bindPopup(popup_dc0101841e9b76bf1dc03f20ab86687d)
+        ;
+
+        
+    
+    
+            var poly_line_d041f5b44be41ca6b690ed010cf87e44 = L.polyline(
+                [[-37.8676, 145.09146], [-37.81682, 145.09802]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c6256f67eb70424b3d72a0d5aefc006c);
+        
+    
+            var marker_d58c05b80dd855a6837740cf38278ef8 = L.marker(
+                [-37.81682, 145.09802],
+                {}
+            ).addTo(map_c6256f67eb70424b3d72a0d5aefc006c);
+        
+    
+            var icon_445b347c40a1dd3a11530bb531370472 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d58c05b80dd855a6837740cf38278ef8.setIcon(icon_445b347c40a1dd3a11530bb531370472);
+        
+    
+        var popup_e5f1ba756ba0b4d09284ed902f681172 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7483651bc942edccc43dbe032e6d9eeb = $(`<div id="html_7483651bc942edccc43dbe032e6d9eeb" style="width: 100.0%; height: 100.0%;"><b>Predicted Flow:</b> 943 vehicles/hour</div>`)[0];
+                popup_e5f1ba756ba0b4d09284ed902f681172.setContent(html_7483651bc942edccc43dbe032e6d9eeb);
+            
+        
+
+        marker_d58c05b80dd855a6837740cf38278ef8.bindPopup(popup_e5f1ba756ba0b4d09284ed902f681172)
+        ;
+
+        
+    
+</script>
